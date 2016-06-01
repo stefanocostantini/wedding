@@ -8,11 +8,6 @@ html {
 
 body {
 	min-height:100%;
-	background: url("../img/dummy2.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-  	-background-size: cover;
 }
 
 ::-moz-selection {
@@ -157,10 +152,24 @@ nav a:hover {
 .main article h1 {
     font-size: 1.5em;
 	font-family: "Quicksand", sans-serif;
-	coler: #222;
+	color: #222;
 }
 
+.main article h2 {
+	font-size: 1.1em;
+	font-family: "Quicksand", sans-serif;
+	color: #222;
+	text-align: center;
+}
 
+.main article p {
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+}
+
+.main article a {
+	color: #222;
+}
 
 .main aside {
     color: white;
@@ -170,6 +179,30 @@ nav a:hover {
 .footer-container footer {
     color: white;
     padding: 20px 0;
+}
+
+.smallNav{
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	height: 3.5em;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0px 5px 10px #ccc;
+}
+
+.smallNav #title {
+	font-family: "Great Vibes"; serif;
+	display: block;
+	font-size: 1.8em;
+	padding-left: 0.5em;
+	padding-top: 0.6em;
+	}
+	
+.smallNav a {
+	text-decoration: none;
+	color: #222;
 }
 
 /* ===============
@@ -184,14 +217,27 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+/* FOR MOBILE ONLY - OTHER SCREEN SIZES ARE BELOW IN MEDIA QUERIES*/
 
-
-
-
-
-
-
-
+#bgr {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -15;
+}
+#bgr img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -15;
+}
 
 
 
